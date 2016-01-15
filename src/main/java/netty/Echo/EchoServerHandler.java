@@ -1,3 +1,5 @@
+package netty.Echo;
+
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelHandler;
@@ -15,7 +17,7 @@ import java.time.LocalDateTime;
 
 @Sharable
 public class EchoServerHandler extends ChannelInboundHandlerAdapter{
-    Logger logger= LogManager.getLogger("EchoServerHandler");
+    Logger logger= LogManager.getLogger("netty.Echo.EchoServerHandler");
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
         logger.debug("new client"+ctx.channel().remoteAddress().toString());

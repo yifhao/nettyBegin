@@ -1,3 +1,5 @@
+package netty.Echo;
+
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
@@ -22,7 +24,7 @@ public class NettyServer {
 
     @Before
     public void setUp() throws Exception {
-        logger= LogManager.getLogger("NettyServer");
+        logger= LogManager.getLogger("netty.Echo.NettyServer");
         logger.debug("set up");
     }
 
